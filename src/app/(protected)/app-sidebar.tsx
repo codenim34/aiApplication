@@ -111,11 +111,17 @@ export function AppSidebar(){
 
                      </div>
                     {
-                        open && (
-                            <Button className="w-full">
-                                <Plus className="mr-2 h-4 w-4"/>
-                                New Project
-                            </Button>
+                        open&& (
+                            <SidebarMenuItem>
+                            <Link href={'/create'}>
+                            <Button size='sm' variant={'outline'} className="w-fit">
+                                    <Plus/>
+                                    Create Project
+                                  </Button> 
+                            </Link>
+                              
+                         
+                         </SidebarMenuItem>
                         )
                     }
                     
